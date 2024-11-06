@@ -1,0 +1,7 @@
+# kustomization.yaml en el directorio overlays-dev
+resources:
+  - ../base  # Hereda la configuración base
+
+# Parchea el deployment para el entorno dev (por ejemplo, usar solo 1 réplica)
+patchesStrategicMerge:
+  - deployment-patch.yaml

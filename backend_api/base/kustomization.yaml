@@ -1,0 +1,4 @@
+# kustomization.yaml en el directorio base
+resources:
+  - deployment.yaml
+  - service.yaml
